@@ -35,6 +35,17 @@
            6/21/2023 3:41 PM
         </p>
     </div>
+
+       <script>
+
+    function updateTime() {
+        var currentTime = new Date().toLocaleString();
+        var timeText = document.querySelector("#timeElement");
+        timeText.innerHTML = currentTime;
+    }
+    setInterval(updateTime, 500);
+
+  </script>
 </body>
 </html>
 cookiebg.png
