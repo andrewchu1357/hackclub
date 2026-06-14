@@ -7,53 +7,28 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+    <div class="topbar">
+        <div class="brand">CookieOs</div>
+        <div class="status">Never Stop Eating Cookies :D</div>
+        <div id="timeElement" class="time">Time</div>
+    </div>
+
+    <main class="hero">
+        <h1>Welcome to my CookieOs!</h1>
+        <p>This is my own webOS that I am developing. It is still in early stages, but I am excited to share it with you all!</p>
+        <a href="https://github.com/andrewchu1357/hackclub" target="_blank" rel="noreferrer">My GitHub project</a>
+    </main>
+
+    <div class="window" id="welcome" style="top: calc(50% - 120px); left: calc(50% - 180px);">
+        <div class="windowheader" id="welcomeheader">
+            <span>Welcome Window</span>
+            <button class="closebutton" id="welcomeclose" type="button">×</button>
+        </div>
+        <div class="windowcontent">
+            <p>Drag this window by its title bar.</p>
+        </div>
+    </div>
+
+    <button id="welcomeopen" class="openbutton" type="button">Open Welcome Window</button>
+
     <script src="script.js"></script>
-  <div style="position: absolute; top: 50%; left: 50%; 
-    transform: translate(-50%, -50%)">
-        
-    <h1>Welcome to my CookieOs!</h1>
-    <a href="https://github.com/andrewchu1357/hackclub">My Github project</a>
-   <p1>This is my own webOS that I am developing. It is still in early stages, but I am excited to share it with you all!</p1>
-    <p2>
-    </p2>
-    </div>
-</div>
-<body style="background-image: url('./cookiebg.png'); background-size: cover; height: 0vh; margin: 0;">
-
-    </body>
-        <div
-                style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(20px); background-color: rgba(157, 32, 32, 0.25); color: #fff; justify-content: space-between;">
-    <p style="margin-left: 2px;">
-        <p>
-            CookieOs
-        </p> 
-
-    <p style="margin-left: 16px; background-color: rgba(256, 256, 256, 0.25); padding: 6px 27px; border-radius: 16px;">
-            Never Stop Eating Cookies :D
-        </p>
-        <p id="timeElement"
-        style="margin-right: 16px;">
-           Time
-        </p>
-    </div>
-
-       <script>
-
-    function updateTime() {
-        var currentTime = new Date().toLocaleString();
-        var timeText = document.querySelector("#timeElement");
-        timeText.innerHTML = currentTime;
-    }
-    setInterval(updateTime, 500);
-
-  </script>
-   <div id="welcome">
-	<p id="welcomeheader"> 
-		Handle
-	</p>
-    	<p style="cursor: pointer" id="welcomeclose">Close</p>
-        <p style="cursor: pointer" id="welcomeopen">ig</p>
-</div>
-</body>
-</html>
-cookiebg.png
