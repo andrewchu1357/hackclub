@@ -1,0 +1,15 @@
+body {
+background-color: rgb(61, 130, 154); 
+}
+
+h1 {
+background-color: #ffcc00;
+}
+
+p {
+background-color: rgb(195, 145, 120);
+}
+
+div {
+background-color: rgba(8, 93, 8, 0.3); 
+}
