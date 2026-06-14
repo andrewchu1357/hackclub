@@ -8,6 +8,8 @@ function dragElement(element) {
   var initialY = 0;
   var currentX = 0;
   var currentY = 0;
+  var welcomeScreenClose = document.querySelector("#welcomeclose")
+  var welcomeScreenOpen = document.querySelector("#welcomeopen")
 
   // Step 3: Check if there is a special header element associated with the draggable element.
   if (document.getElementById(element.id + "header")) {
@@ -51,4 +53,20 @@ function dragElement(element) {
     document.onmouseup = null;
     document.onmousemove = null;
   }
+
+  function openWindow(element) {
+  element.style.display = "flex"
+}
+
+function closeWindow(element) {
+  element.style.display = "none"
+}
+welcomeScreenClose.addEventListener("click", function() {
+  closeWindow(welcomeScreen);
+});
+
+welcomeScreenOpen.addEventListener("click", function() {
+  openWindow(welcomeScreen);
+});
+
 }
