@@ -12,31 +12,19 @@
         <div class="status">Never Stop Eating Cookies :D</div>
         <div id="timeElement" class="time">Time</div>
     </div>
-      
-    <body style="font-family: Noto Sans, system-ui, sans-serif; height: 100vh; background-image: url(./beautifulImage.png); background-size: cover; background-repeat: no-repeat; margin: 0px;">
-	    <div class="window" id="welcome" style="top: calc(50% - 90px); left: calc(50% - 180px);">
-		    (window content)
-	    </div>
-	    <div style="position: absolute; window: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(40, 181, 12, 0.902); color: #ef1010; justify-content: space-between; gap: 32px;">
-		    (topbar content)
-	    </div>
-	    <div id="desktopApps" style="padding-top: 67px; padding-left: 16px;">
-	    	<p>Cookie block</p>
-	    </div>
-    </body>
-
-    <div id="desktopApps" style="padding-top: 64px;">
-    <div style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
-      <img src="cookie.jpg" style="width: 64px; height: 64px; border-radius: 16px;">
-      <p style="margin: 0px; color: #914848; ">Notes</p>
-    </div>
-  </div>
 
     <main class="hero">
         <h1>Welcome to my CookieOs!</h1>
         <p>This is my own webOS that I am developing. It is still in early stages, but I am excited to share it with you all!</p>
         <a href="https://github.com/andrewchu1357/hackclub" target="_blank" rel="noreferrer">My GitHub project</a>
     </main>
+
+    <div id="desktopApps" class="desktop-apps">
+        <div class="desktop-app">
+            <img src="cookie.jpg" alt="Cookie App" class="desktop-icon">
+            <p>Notes</p>
+        </div>
+    </div>
 
     <div class="window" id="welcome" style="top: calc(50% - 120px); left: calc(50% - 180px);">
         <div class="windowheader" id="welcomeheader">
@@ -51,3 +39,5 @@
     <button id="welcomeopen" class="openbutton" type="button">Open Welcome Window</button>
 
     <script src="script.js"></script>
+</body>
+</html>
