@@ -78,4 +78,24 @@ document.addEventListener("DOMContentLoaded", function() {
       openWindow(welcome);
     });
   }
+
+  // Cookie window
+  const cookieWindow = document.getElementById("cookieWindow");
+  const cookieWindowHeader = document.getElementById("cookieWindowHeader");
+  if (cookieWindow && cookieWindowHeader) {
+    dragElement(cookieWindow, cookieWindowHeader);
+  }
+
+  window.openCookieWindow = function() {
+    if (cookieWindow) {
+      cookieWindow.style.display = "flex";
+      cookieWindow.style.zIndex = 100;
+    }
+  };
+
+  window.closeCookieWindow = function() {
+    if (cookieWindow) {
+      cookieWindow.style.display = "none";
+    }
+  };
 });

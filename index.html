@@ -14,15 +14,26 @@
     </div>
 
     <main class="hero">
-        <h1>Welcome to my CookieOs!</h1>
-        <p>This is my own webOS that I am developing. It is still in early stages, but I am excited to share it with you all!</p>
+        <h1>Welcome to CookieOs!</h1>
+        <p>This is my own webOS that I am developing. Try to find the 3 hidden features/secrets. </p>
         <a href="https://github.com/andrewchu1357/hackclub" target="_blank" rel="noreferrer">My GitHub project</a>
     </main>
 
     <div id="desktopApps" class="desktop-apps">
-        <div class="desktop-app">
+        <div class="desktop-app" id="cookieAppIcon" ondblclick="openCookieWindow()">
             <img src="cookie.jpg" alt="Cookie App" class="desktop-icon">
-            <p>Notes</p>
+            <p>cookie.png</p>
+        </div>
+    </div>
+
+    <!-- Cookie Image Window -->
+    <div class="window" id="cookieWindow" style="display:none; top: calc(50% - 200px); left: calc(50% - 160px);">
+        <div class="windowheader" id="cookieWindowHeader">
+            <span>🍪 cookie.png</span>
+            <button class="closebutton" onclick="closeCookieWindow()" type="button">×</button>
+        </div>
+        <div class="windowcontent cookie-img-content">
+            <img src="cookie.jpg" alt="Cookie" class="cookie-window-img">
         </div>
     </div>
 
@@ -32,7 +43,7 @@
             <button class="closebutton" id="welcomeclose" type="button">×</button>
         </div>
         <div class="windowcontent">
-            <p>Drag this window by its title bar.</p>
+            <p>You can move this around.</p>
         </div>
     </div>
 
