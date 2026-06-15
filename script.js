@@ -99,6 +99,26 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   };
 
+  // R App window
+  const rWindow = document.getElementById("rWindow");
+  const rWindowHeader = document.getElementById("rWindowHeader");
+  if (rWindow && rWindowHeader) {
+    dragElement(rWindow, rWindowHeader);
+  }
+
+  window.openRWindow = function() {
+    if (rWindow) {
+      rWindow.style.display = "flex";
+      rWindow.style.zIndex = 100;
+    }
+  };
+
+  window.closeRWindow = function() {
+    if (rWindow) {
+      rWindow.style.display = "none";
+    }
+  };
+
     // about
   const about = document.getElementById("about");
   const aboutHeader = document.getElementById("aboutHeader");

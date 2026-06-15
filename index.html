@@ -25,6 +25,10 @@
             <img src="cookie.jpg" alt="Cookie App" class="desktop-icon">
             <p>About CookieOS</p>
         </div>
+        <div class="desktop-app" id="rAppIcon" ondblclick="openRWindow()">
+            <img src="r.png" alt="R App" class="desktop-icon">
+            <p>R App</p>
+        </div>
     </div>
 
     <!-- Cookie Image Window -->
@@ -38,13 +42,14 @@
         </div>
     </div>
 
-     <div class="window" id="about" style="display:none; top: calc(50% - 400px); left: calc(50% - 200px);">
-        <div class="windowheader" id="cookieWindowHeader">
-            <span>system Info</span>
-            <button class="closebutton" onclick="closeCookieWindow()" type="button">×</button>
+    <!-- R App Window -->
+    <div class="window" id="rWindow" style="display:none; top: calc(50% - 180px); left: calc(50% - 160px);">
+        <div class="windowheader" id="rWindowHeader">
+            <span>🟥 R App</span>
+            <button class="closebutton" onclick="closeRWindow()" type="button">×</button>
         </div>
-        <div class="windowcontent cookie-img-content">
-            <p>So. You've decided to learn about CookieOS. I made CookieOS because I Love cookies, and well, I love to eat in general. So This website is based off one of my favorite deserts. Find some hidden secrets:D</p>
+        <div class="windowcontent">
+            <img src="r.png" alt="R" style="max-width:100%; border-radius:8px;">
         </div>
     </div>
 
