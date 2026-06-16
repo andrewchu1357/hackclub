@@ -119,26 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   };
 
-    // about
-  const about = document.getElementById("about");
-  const aboutHeader = document.getElementById("aboutHeader");
-  if (about && aboutHeader) {
-    dragElement(about, aboutHeader);
-  }
-
-  window.openCookieWindow = function() {
-    if (about) {
-      about.style.display = "flex";
-      about.style.zIndex = 100;
-    }
-  };
-
-  window.closeCookieWindow = function() {
-    if (about) {
-      about.style.display = "none";
-    }
-  };
-
 });
+
 
 
